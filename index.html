@@ -10,12 +10,44 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="py-1 bg-dark text-primary text-center"> 
-        <h1>Mateo Aguilar</h1>
-        <p class="text-primary"><a class="text-decoration-none" href="mailto:mateo.aguilar@mohawkcollege.ca">mateo.aguilar@mohawkcollege.ca</a></p>
+    <div class="py-4">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">My Portfolio!</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#aboutme">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#edu">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#skills">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#resume">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact Info</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="py-1 bg-dark text-primary text-center" id="aboutme"> 
+        <h1>Mateo Aguilar Hernandez</h1> 
+        <p class="text-primary">000915360</p>
         <p class="text-primary">this website was created temporarily for an assignment</p>
     </div>
-    <div class="px-4 py-2 text-center">
+    <div class="px-4 py-2 text-center" id="edu">
         <h1 class="fw-bold">Who Am I?</h1>
         <div class="col-lg-6 mx-auto">
         <p class="fs-5 mb-4">Backend Development Enthusiast always looking to learn and grow my personal skills through projects. Looking to break into the world of programming and contribute with my knowledge. Highly technical with great communication skills and a passion for anything  backend related.</p>
@@ -27,11 +59,11 @@
         <p class="fs-5 mb-4">My education includes ongoing software development studies at <a class="text-decoration-none" href="https://www.mohawkcollege.ca/">Mohawk College</a>, currently in my fourth semester, following prior Systems Engineering coursework at Bolivar Tech University (<a class="text-decoration-none" href="https://www.utb.edu.co/">UTB</a>) in Cartagena, Colombia. I graduated high school in 2022, where I led and participated in the robotics and programming club, fostering my early interest in technology. This combination of academic and extracurricular experience really boosted my professional growth in software development.</p>
         </div>
     </div>
-    <div class="container col-xxl-8 px-5 py-2">
+    <div class="container col-xxl-8 px-5 py-2" id="skills">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-4">
-            <div class="col-lg-6 px-5">
+            <div class="col-lg-6 px-5" id="projects">
                 <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">My Projects</h1>
-                <p><a class="text-decoration-none" href="https://github.com/Mateo3162/mateo316_php_version">My own website, done completely in PHP</a> <span class="badge bg-success-subtle border border-success-subtle text-primary-emphasis rounded-pill">PHP/Hack</span> <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill">Incomplete</span></p>
+                <p><a class="text-decoration-none" href="https://github.com/Mateo3162/mateo316_php_version">My own website, done completely in PHP</a> <span class="badge bg-success-subtle border border-success-subtle text-primary-emphasis rounded-pill">PHP / Hack</span> <span class="badge bg-warning-subtle border border-warning-subtle text-warning-emphasis rounded-pill">Incomplete / Not Hosted Yet</span></p>
                 <p><a class="text-decoration-none" href="https://github.com/Mateo3162/DanielaVB">Basic exam-taking software with auto-grading after submission</a> <span class="badge bg-info-subtle border border-info-subtle text-primary-emphasis rounded-pill">Visual Basic</span></p>
                 <p><a class="text-decoration-none" href="resources/robopresentation.jpg">Arduino Line Tracking Robot</a> (clubwork) <span class="badge bg-danger-subtle border border-danger-subtle text-primary-emphasis rounded-pill">Robotics</span></p>
                 <p class="text-primary">And many more... (hosted in my actual website) <span class="badge bg-dark-subtle border border-dark-subtle text-light-emphasis rounded-pill">Stay Tuned!</span></p>
@@ -63,6 +95,22 @@
                     <li class="list-group-item">C/C++</li>
                 </ul>
             </div>
+        </div>
+    </div>
+    <div class="px-4 py-2 text-center" id="resume">
+        <h1 class="fw-bold">My <a class="text-decoration-none" href="resources/resume.pdf">Resume</a></h1>
+        <div class="overflow-hidden">
+            <div class="container px-5">
+              <img src="resources/resume.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Resume" width="700" height="500" loading="lazy">
+            </div>
+          </div>
+    </div>
+    <div class="px-4 py-2 text-center" id="contact">
+        <h1 class="fw-bold">Contact Info</h1>
+        <div class="col-lg-6 mx-auto">
+            <p><a class="text-decoration-none fs-5" href="mailto:mateo.aguilar@mohawkcollege.ca">mateo.aguilar@mohawkcollege.ca</a></p>
+            <p><a class="text-decoration-none fs-5" href="https://linkedin.com/in/mateo-aguilar-h316">linkedin.com/in/mateo-aguilar-h316</a></p>
+            <p><a class="text-decoration-none fs-5" href="tel:+19057198603">(905) 719-8603</a></p>
         </div>
     </div>
 </html>
